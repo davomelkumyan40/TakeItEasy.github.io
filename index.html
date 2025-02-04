@@ -6,26 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take It Easy</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="./assets/appicon.png" height="150" width="150" alt="Take It Easy Logo">
+    <div class="main">
+        <div class="bar">
+            <a href="https://davomelkumyan40.github.io/TakeItEasy.github.io/privacypolicy.it.html" class="btn-pp"
+                target="_blank">Privacy Policy</a>
         </div>
-        <h1>Benvenuti su Take It Easy Torino!</h1>
-        <p>L'applicazione che semplifica i tuoi spostamenti. Scaricala ora e scopri tutte le sue funzionalità!</p>
-        <div>
-            <a class="download-btn"
-                href="https://play.google.com/store/apps/details?id=com.takeiteasy.torino.app">Android</a>
-            <a class="download-btn" href="#">iOS (comming soon)</a>
+        <div class="container">
+            <div class="header-container">
+                <div class="header">
+                    <h1>Take it&nbsp;</h1>
+                    <h1>Easy!</h1>
+                </div>
+                <div class="sub-header">
+                    <h3>Monitoraggio autobus in tempo reale</h3>
+                    <p>Monitoraggio degli autobus in tempo reale, notifiche di avvicinamento
+                        e assistenza alla pianificazione dei viaggi</p>
+                </div>
+                <div class="buttons">
+                    <a title="Get it on Google Play" class="btn btn-droid"
+                        href="https://play.google.com/store/apps/details?id=com.takeiteasy.torino.app" target="_blank">
+                        <div class="btn-wrapper">
+                            <img src="/assets/playstore.svg" />
+                            <div class="flex">
+                                <p>GET IT ON</p>
+                                <img src="/assets/getplay.svg" />
+                            </div>
+                        </div>
+                    </a>
+                    <a title="Not available yet" class="btn btn-apple" href="#" target="_blank">
+                        <div class="btn-wrapper">
+                            <img src="/assets/apple.svg" />
+                            <div class="flex">
+                                <p>GET IT ON</p>
+                                <p class="apple-title">App Store</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="message-box message-box-tablet">
+                    <img src="./assets/modal-img.webp" alt="">
+                    <div class="content">
+                        <h4 class="title">Fermate vicine sulla mappa ️ </h4>
+                        <p class="sub-title">Trova le fermate dell'autobus più vicine con un solo tocco. Pianifica il
+                            percorso
+                            con
+                            facilità per non perdere mai il tuo autobus</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slider" class="slider">
+                <div class="slides">
+                    <img id="slide_1" class="slide first-slide" src="./assets/slide1.webp" alt="slide 1">
+                    <img id="slide_2" class="slide active" src="./assets/slide2.webp" alt="slide 2">
+                    <img id="slide_3" class="slide last-slide" src="./assets/slide3.webp" alt=" slide 3">
+                </div>
+                <div class="controls">
+                    <div id="prev" class="btn-slider">
+                        <img id="prev" src="./assets/arrow-left.svg">
+                    </div>
+                    <div class="progress">
+                        <div id="step_3" class="step"></div>
+                        <div id="step_2" class="step active"></div>
+                        <div id="step_1" class="step"></div>
+                    </div>
+                    <div id="next" class="btn-slider">
+                        <img id="next" src="./assets/arrow-left.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-box message-box-mobile">
+                <img src="./assets/modal-img.webp" alt="">
+                <div class="content">
+                    <h4 class="title">Fermate vicine sulla mappa ️ </h4>
+                    <p class="sub-title">Trova le fermate dell'autobus più vicine con un solo tocco. Pianifica il
+                        percorso
+                        con
+                        facilità per non perdere mai il tuo autobus</p>
+                </div>
+            </div>
         </div>
-        <div class="footer">
-            © 2024 Take It Easy Torino. Tutti i diritti riservati.
-        </div>
-        <a href="https://davomelkumyan40.github.io/TakeItEasy.github.io/privacypolicy.html">Privacy Policy EN</a>
-        <a href="https://davomelkumyan40.github.io/TakeItEasy.github.io/privacypolicy.it.html">Privacy Policy IT</a>
+
     </div>
+
+    <div class="footer">
+        <p>© 2025 Take It Easy Torino. Tutti i diritti riservati.</p>
+    </div>
+    <!-- <a href="https://davomelkumyan40.github.io/TakeItEasy.github.io/privacypolicy.html">Privacy Policy EN</a>
+    <a href="https://davomelkumyan40.github.io/TakeItEasy.github.io/privacypolicy.it.html">Privacy Policy IT</a> -->
 </body>
+<script src="./scripts/main.js"></script>
 
 </html>
