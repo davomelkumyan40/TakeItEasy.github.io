@@ -3,9 +3,9 @@ let isBusy = false;
 let direction = 0;
 let slider = { startX: 0, endX: 0, slideTreshold: 50 };
 let sliderCards = [
-    { id: '1', title: 'Some Title', desc: 'some text for slider' },
-    { id: '2', title: 'Fermate vicine sulla mappa ️', desc: "Trova le fermate dell'autobus più vicine con un solo tocco. Pianifica il percorso con facilità per non perdere mai il tuo autobus" },
-    { id: '3', title: 'Some Title 3', desc: 'some text for slider' }
+    { "id": "1", "title": "Allarmi per le tue linee preferite", "desc": "Imposta un avviso per ricevere notifiche prima dell'arrivo del tuo autobus. Non perdere mai la tua corsa!" },
+    { "id": "2", "title": "Segui il tuo mezzo in tempo reale", "desc": "Monitora gli spostamenti del tuo autobus sulla mappa in tempo reale. Rimani sempre aggiornato sugli orari e sugli eventuali ritardi!" },
+    { "id": "3", "title": "Trova le fermate più vicine", "desc": "Sfoglia la lista delle fermate vicine e scegli quella perfetta per il tuo viaggio. Facile e veloce!" }
 ];
 
 document.querySelectorAll('.btn-slider').forEach(btn => {

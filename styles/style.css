@@ -17,6 +17,7 @@ body {
     background-image: url(../assets/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     color: #333;
 }
@@ -64,6 +65,7 @@ p {
     display: flex;
     justify-content: start;
     margin-bottom: 12px;
+    white-space: nowrap;
 }
 
 .sub-header{
@@ -188,12 +190,19 @@ p {
     cursor: pointer;
     gap: 18px;
 }
-
-.message-box > img{
-    position: relative;
-    top: 25px;
+.message-box > .message-box-image > img,
+.message-box > .message-box-image{
     width: 137px;
-    height: 164px;
+}
+
+.message-box > .message-box-image > img{
+    position: absolute;
+    bottom: 0;
+}
+
+.message-box > .message-box-image{
+    position: relative;
+    min-width: 137px;
 }
 
 .content{
@@ -207,6 +216,7 @@ p {
     color: #003C35;
     margin-top: 45.78px;
     margin-bottom: 15.59px;
+    line-height: 1.7rem;
 }
 
 .content > .sub-title{
@@ -464,6 +474,7 @@ p {
 
     body{
         height: auto;
+        background-position: initial;
     }
 
     .message-box-tablet{
@@ -523,6 +534,7 @@ p {
     .message-box-mobile {
         display: flex !important;
         margin: 0 !important;
+        width: 90%;
     }
 
     .message-box-tablet {
@@ -548,10 +560,6 @@ p {
         font-size: 14px;
     }
 
-    .message-box-mobile{
-        width: 100%;
-    }
-
     .bar {
         height: 110px;
     }
@@ -571,7 +579,7 @@ p {
         transform: scale(0.8);
     }
 
-    .message-box.message-box-mobile{
+    .message-box.message-box-mobile > .content > .sub-title{
         padding-bottom: 45.78px;
     }
 }
